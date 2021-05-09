@@ -1,6 +1,6 @@
 import { roles } from '@test/config';
 import { Categories } from '@enums/listing-categories';
-import { Antiques } from '@enums/listing-sub-categories';
+import { Computers } from '@enums/listing-sub-categories';
 import { Home } from '@pages/home';
 import { Listings } from '@pages/listings';
 import { Watchlist } from '@pages/watchlist';
@@ -24,8 +24,8 @@ describe('Watchlist', () => {
   });
 
   it('should add a listing to the user watchlist', () => {
-    home.openMainCategory(Categories.Antiques);
-    home.openSubcategory(Antiques.Stamps);
+    home.openMainCategory(Categories.Computers);
+    home.openSubcategory(Computers.Laptops);
     home.search('product');
     listing = listings.getListings()[0];
 

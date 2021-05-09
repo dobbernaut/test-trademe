@@ -1,5 +1,5 @@
 import { Categories } from '@enums/listing-categories';
-import { Antiques } from '@enums/listing-sub-categories';
+import { Computers } from '@enums/listing-sub-categories';
 import { Home } from '@pages/home';
 import { Listings } from '@pages/listings';
 
@@ -10,8 +10,8 @@ describe('Search', () => {
 
   it('should return the expected number of listings', () => {
     home.open();
-    home.openMainCategory(Categories.Antiques);
-    home.openSubcategory(Antiques.Stamps);
+    home.openMainCategory(Categories.Computers);
+    home.openSubcategory(Computers.Laptops);
     home.search('product');
 
     expect(listings.getListings().length).toBeGreaterThanOrEqual(0);
