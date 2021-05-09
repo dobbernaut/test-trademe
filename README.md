@@ -1,5 +1,5 @@
-
 # Description
+
 This is a sample test suite for testing web UI and APIs.
 
 The tests runs on node and is written on Typescript. It uses [axios](https://axios-http.com/) as the http client for testing the services and [webdriverio](https://webdriver.io/) for the website. Both are using [Jasmine](https://jasmine.github.io/) for the test framework.
@@ -27,7 +27,6 @@ This requires a C++ compiler to be available from your machine. [Choose either o
 ## Application Accounts and Tokens
 
 This test uses the [Trade Me sandbox](https://www.tmsandbox.co.nz/). You will need to have a user created on the Trade Me sandbox and have generated OAuth tokens for the user to run these. You will then use these information for the environment variables as instrctured on the Test section.
-
 
 ### Create New User
 
@@ -79,6 +78,7 @@ tokensecret=REPLACEWITHoauthtokensecret
 key=REPLACEWITHconsumerkey
 keysecret=REPLACEWITHconsumersecret
 ```
+
 ## Run test
 
 For running the ui tests, use:
